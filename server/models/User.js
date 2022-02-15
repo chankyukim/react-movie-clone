@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+
 const userSchema = mongoose.Schema({
   name: {
     type: String,
@@ -10,7 +12,7 @@ const userSchema = mongoose.Schema({
     unique: 1,
   },
   password: {
-    type: Number,
+    type: String,
     minlength: 5,
   },
   lastname: {
@@ -30,6 +32,21 @@ const userSchema = mongoose.Schema({
   },
 });
 
+userSchema.pre('save', async function (next) {
+  if (this.isModified('password')) {
+    try {
+      const hashPassword = await bcrypt.hash(this.password, 10);
+      this.password = hashPassword;
+      next();
+    } catch (err) {
+      // console.log(err);
+      return next(err);
+    }
+  } else {
+    next();
+  }
+});
+
 const User = mongoose.model('user', userSchema);
 
 module.exports = { User };
@@ -39,3 +56,4 @@ module.exports = { User };
 //role : 관리자, 일반 유저로 나누기 위해서, 1이면 관리자 0이면 일반 유저
 //token : 유효성 관리를 위해서
 //tokenExp : 토큰을 사용할 수 있는 기간
+//pre메서드 : 특정 동작 이전에 어떤 행동을 취할 지 정의할 수 있다. userSchema.pre("save") : save하기 전에 호출된다.
