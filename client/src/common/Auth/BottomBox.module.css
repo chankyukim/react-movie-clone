@@ -1,0 +1,12 @@
+.container {
+  padding: 2rem 2rem;
+  border: 1px solid rgb(219, 219, 219);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: 700;
+}

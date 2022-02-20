@@ -24,9 +24,9 @@ async function main() {
   await mongoose.connect(config.mongoURI);
 }
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/api/users/hello', (req, res) => {
+//   res.send('Hello chankyu!');
+// });
 
 //sign up
 app.post('/api/users/register', (req, res) => {

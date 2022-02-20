@@ -1,0 +1,33 @@
+.top-box {
+  padding: 3.5rem 4rem 2.5rem 4rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  border: 0.5px solid rgb(219, 219, 219);
+  background-color: #fafafa;
+  border-radius: 3px;
+  padding: 7px;
+  margin-top: 1rem;
+}
+
+.register-form button {
+  margin-top: 2rem;
+  background-color: #0095f6;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 1rem;
+}
