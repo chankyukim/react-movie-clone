@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Login from '../components/Login';
 import { useDispatch } from 'react-redux';
-import { loginUser } from '../modules/user/actions';
 import { useHistory } from 'react-router-dom';
+import { loginUser } from '../../modules/user/actions';
+import Login from './Login';
 
 const LoginContainer = props => {
   const dispatch = useDispatch();

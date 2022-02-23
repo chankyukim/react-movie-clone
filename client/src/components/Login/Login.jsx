@@ -1,13 +1,13 @@
 import styles from './Login.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKey } from '@fortawesome/free-solid-svg-icons';
-import AuthLayout from '../common/Auth/AuthLayout';
-import FormBox from '../common/Auth/FormBox';
-import TopBox from '../common/Auth/TopBox';
-import BottomBox from '../common/Auth/BottomBox';
-import routes from '../routes';
-import Input from '../common/Auth/Input';
-import Button from '../common/Auth/Button';
+import AuthLayout from '../../common/Auth/AuthLayout';
+import TopBox from '../../common/Auth/TopBox';
+import BottomBox from '../../common/Auth/BottomBox';
+import routes from '../../routes';
+import Input from '../../common/Auth/Input';
+import Button from '../../common/Auth/Button';
+import FormBox from '../../common/Auth/FormBox';
 
 const Login = ({ onChange, onSubmit, inputs }) => {
   return (

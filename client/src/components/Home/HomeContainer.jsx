@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import Landing from '../components/Landing';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { logoutUser } from '../modules/user/actions';
+import { logoutUser } from '../../modules/user/actions';
+import Home from './Home';
 
-const LandingContainer = () => {
+const HomeContainer = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const isAuth = useSelector(state => state?.user?.userData?.isAuth);
@@ -19,7 +19,7 @@ const LandingContainer = () => {
         }
       });
   };
-  return <Landing onClickHandler={onClickHandler} isAuth={isAuth} />;
+  return <Home onClickHandler={onClickHandler} isAuth={isAuth} />;
 };
 
-export default LandingContainer;
+export default HomeContainer;

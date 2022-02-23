@@ -1,19 +1,19 @@
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import styles from './App.module.css';
-import Auth from './hoc/Auth';
-import routes from './routes';
+import './App.module.css';
+import Auth from '../hoc/Auth';
+import routes from '../routes';
+import HomeContainer from './Home/HomeContainer';
+import LoginContainer from './Login/LoginContainer';
+import RegisterContainer from './SignUp/RegisterContainer';
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div>
       <Router>
         <Switch>
-          <Route exact path={routes.home} component={Auth(LandingPage, null)} />
-          <Route path={routes.login} component={Auth(LoginPage, false)} />
-          <Route path={routes.register} component={Auth(RegisterPage, false)} />
+          <Route exact path={routes.home} component={Auth(HomeContainer, null)} />
+          <Route path={routes.login} component={Auth(LoginContainer, false)} />
+          <Route path={routes.register} component={Auth(RegisterContainer, false)} />
         </Switch>
       </Router>
     </div>

@@ -2,8 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import Register from '../components/Register';
-import { registerUser } from '../modules/user/actions';
+import { registerUser } from '../../modules/user/actions';
+import Register from './Register';
 
 const RegisterContainer = () => {
   const dispatch = useDispatch();

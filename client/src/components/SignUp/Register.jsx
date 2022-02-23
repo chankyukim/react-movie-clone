@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './Register.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRegistered } from '@fortawesome/free-solid-svg-icons';
-import AuthLayout from '../common/Auth/AuthLayout';
-import FormBox from '../common/Auth/FormBox';
-import TopBox from '../common/Auth/TopBox';
-import BottomBox from '../common/Auth/BottomBox';
-import routes from '../routes';
-import Button from '../common/Auth/Button';
+import AuthLayout from '../../common/Auth/AuthLayout';
+import FormBox from '../../common/Auth/FormBox';
+import TopBox from '../../common/Auth/TopBox';
+import BottomBox from '../../common/Auth/BottomBox';
+import routes from '../../routes';
+import Button from '../../common/Auth/Button';
 
 const Register = ({ inputs, onChange, onSubmit }) => {
   return (
