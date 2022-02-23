@@ -1,0 +1,11 @@
+.sideBar {
+  background-color: black;
+  flex: 0 0 18%;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0px;
+  width: 24rem;
+  left: 0px;
+  bottom: 0px;
+  z-index: 100;
+}

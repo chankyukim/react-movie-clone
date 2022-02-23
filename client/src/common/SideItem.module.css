@@ -1,0 +1,25 @@
+.item {
+  padding: 1rem 1.2rem;
+  list-style: none;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.itemLink {
+  width: 100%;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  height: 2.25rem;
+}
+
+.routeColor {
+  background-color: #303133;
+}
