@@ -47,6 +47,7 @@ const LoginContainer = props => {
     dispatch(loginUser(body)) //
       .then(response => {
         if (response.loginSuccess) {
+          localStorage.setItem('userId', response.userId);
           history.push('/');
         } else {
           alert(`${response.message}`);
