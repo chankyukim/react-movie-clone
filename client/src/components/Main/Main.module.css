@@ -1,0 +1,52 @@
+.carouselContainer {
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+}
+
+.carousel {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #6f6d6f;
+  opacity: 0.7;
+}
+
+.imgSection {
+  background-blend-mode: darken;
+  height: 100vh;
+}
+
+.imgSection::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.contentBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.mainText {
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+.subText {
+  font-size: 1.8rem;
+  color: #bdc3c7;
+  margin-bottom: 3rem;
+}

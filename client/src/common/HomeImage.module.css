@@ -1,0 +1,31 @@
+.imgSection {
+  background-blend-mode: darken;
+  height: 100vh;
+}
+
+.imgSection::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.contentBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.mainText {
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+.subText {
+  font-size: 1.8rem;
+  color: #bdc3c7;
+  margin-bottom: 3rem;
+}
